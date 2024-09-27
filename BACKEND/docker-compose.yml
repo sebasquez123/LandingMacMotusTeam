@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  mongo:
+    #contenedor con  persistencia de datos
+    image: mongo:latest
+    container_name: Mongo_landing_page
+    ports:
+      - "27018:27017" # Conectar al puerto Mongo por defecto si no se tiene mongodb localmente
+    volumes:
+      - ./mongo-data:/data/db # Persistir datos en un volumen local
+      # environment:
+      #   MONGO_INITDB_ROOT_USERNAME: root # Usuario root para MongoDB
+      #   MONGO_INITDB_ROOT_PASSWORD: example # Contraseña para MongoDB
+
+      # mongo-express:
+      #   #contenedor con interfaz web para mongo
+      #   image: mongo-express
+      #   container_name: mongo-landing_page_interfaz
+      #   ports:
+      #     - "8081:8081" # Conectar al puerto de Mongo Express
+      #   environment:
+      #     ME_CONFIG_MONGODB_ADMINUSERNAME: root # Usuario root para Mongo Express
+      #     ME_CONFIG_MONGODB_ADMINPASSWORD: example # Contraseña para Mongo Express
+      #     ME_CONFIG_MONGODB_SERVER: mongo # Nombre del servicio Mongo
+
+
+
+      # ME_CONFIG_MONGODB_PORT: 27017
+      # ME_CONFIG_MONGODB_AUTH_DATABASE: admin
+      # ME_CONFIG_BASICAUTH_USERNAME: yourNewUsername
+      # ME_CONFIG_BASICAUTH_PASSWORD: yourNewPassword
