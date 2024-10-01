@@ -3,7 +3,6 @@
 
 Is a monetized product that offers reach and market solutions to any brand . It is currently used by the UTP aeronautics laboratory in the city of Pereira, Pastelería Alicia and Distrinet.
 
-You can find one of the uses at the following link: https://macmotusfront.onrender.com/
 
 Used technologies: 
 
